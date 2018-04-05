@@ -15,7 +15,7 @@ function subRocks(sub) {
         prevPlay = sub;
     }
     else {
-        console.log("There's not that many rocks left.")
+        console.log("There's not that many rocks left.");
     }
 }
 
@@ -58,11 +58,11 @@ function playerInput() {
             }
         }
         if (count > 0) {   
-            if ((count % 2) == 0){
-                round += 1;
-                console.log("Round " + round + ". Fight!");
+                if (((count % 2) == 0) && (rocks == 0)){
+                    round += 1;
+                    console.log("Round " + round + ". Fight!");
+                }
             }
-        }
     }
 }
 
