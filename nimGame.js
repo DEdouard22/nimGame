@@ -58,11 +58,13 @@ function playerInput() {
             }
         }
         if (count > 0) {   
-                if (((count % 2) == 0) && (rocks == 0)){
+            if (rocks != 0) {
+                if ((count % 2) == 0){
                     round += 1;
                     console.log("Round " + round + ". Fight!");
                 }
             }
+        }
     }
 }
 
