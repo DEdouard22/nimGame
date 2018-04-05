@@ -23,7 +23,7 @@ function playerInput() {
     var numPrompt;       
     if (playerTurn == 1){    
         var numPrompt = parseInt(prompt("There are " +rocks+ " rocks left. Your turn Player "+playerTurn+". How many rocks will you remove: 1, 2 or 3?"));
-        if (numPrompt <= 3) {
+        if (numPrompt > 0  && numPrompt <= 3) {
             count += 1; 
             subRocks(numPrompt);
             if (rocks !== 0) {
